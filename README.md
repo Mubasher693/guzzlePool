@@ -1,7 +1,7 @@
 # GIATA Coding Challenge
 
 
-How many Hotels in the GIATA Drive Hotel Directory have a GIATA-ID that can be divided by
+How many Hotels in the Directory have a ID that can be divided by
 its rating without remainder? (Only consider ratings between 2 and 7)
 
 ## Dependencies
@@ -18,5 +18,5 @@ its rating without remainder? (Only consider ratings between 2 and 7)
 * Run Unit Tests with `./vendor/bin/phpunit test/HotelDirectoryRemainderTest.php --log-junit test.xml`
 
 ## Environment Variables
-* _GIATA Drive Hotel Directory Link_ : DRIVE_URL
-* _Batch to execute asyncronusly using guzzle_ : BATCH_SIZE
+* _Main Directory Link_ : DRIVE_URL
+* _Batch to execute asynchronously using guzzle_ : BATCH_SIZE
