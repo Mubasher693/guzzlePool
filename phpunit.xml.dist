@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<phpunit
+        colors="true"
+        stopOnFailure="false"
+        backupGlobals="false"
+        backupStaticAttributes="false"
+        convertErrorsToExceptions="true"
+        convertNoticesToExceptions="true"
+        convertWarningsToExceptions="true"
+        processIsolation="false"
+        cacheTokens="true"
+        verbose="true"
+        bootstrap="test/bootstrap.php">
+    <php>
+        <server name="KERNEL_DIR" value="/" />
+    </php>
+    <testsuites>
+        <testsuite name="Prophet test Suite">
+            <directory>tests</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>
