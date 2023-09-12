@@ -45,7 +45,7 @@ class HotelDirectoryRemainderTest extends TestCase
      */
     public function testCheckRemainder(): void {
 
-        $operation = new HotelDirectoryRemainder($_ENV['DRIVE_URL'], $_ENV['BATCH_SIZE']);
+        $operation = new HotelDirectoryRemainder($_ENV['BASE_DRIVE_URL'].DIRECTORY_SEPARATOR.$_ENV['DRIVE_URL'], $_ENV['BATCH_SIZE']);
         // With Remainder
         $count =  $operation->checkRemainder($this->mockGIATADriveWithRemainder, $this->batchSize);
         $this->assertEquals(0, $count, "Total $count GIATA-IDs divisible by rating without a remainder.");

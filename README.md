@@ -18,5 +18,6 @@ its rating without remainder? (Only consider ratings between 2 and 7)
 * Run Unit Tests with `./vendor/bin/phpunit test/HotelDirectoryRemainderTest.php --log-junit test.xml`
 
 ## Environment Variables
-* _Main Directory Link_ : DRIVE_URL
-* _Batch to execute asynchronously using guzzle_ : BATCH_SIZE
+* _Base URL or Directory_ : BASE_DRIVE_URL "Replace with Base url of drive"
+* _Main Directory Link_ : DRIVE_URL "Replace to end point that returns all URLs"
+* _Batch to execute asynchronously using guzzle_ : BATCH_SIZE "Tested successfully with 800" 
